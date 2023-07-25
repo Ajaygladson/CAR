@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vehicle cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="image">
+            <img src="https://media.istockphoto.com/id/501282196/photo/laferrari.jpg?s=612x612&w=0&k=20&c=yJH3oUuhYSmta_BYdwoUOktqWps5zC86guy5hQ29608=" alt="" height="200px" width="400px" id="img">
+        </div>
+        <div id="details">
+            <h2>FERARI 8 series 2023</h2>
+            <table>
+                <tr>
+                    <td>🚘</td>
+                    <td>Mileage:</td>
+                    <td>100 miles</td>
+                </tr>
+                <tr>
+                    <td>💧</td>
+                    <td>Fuel:</td>
+                    <td>25 mpg</td>
+                </tr>
+                <tr>
+                    <td>🛡️</td>
+                    <td>Safety:</td>
+                    <td>🎖️🎖️🎖️🎖️🎖️</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>Pick a color :</p>
+            <button id="black" onclick="cblack()"></button>
+            <button id="silver" onclick="csilver()"></button>
+            <button id="grey" onclick="cgrey()"></button>
+ 
+        </div>
+        <div class="cartsystem">
+            <input type="button" value="Add the cart" onclick="addingtocart" id="cartbutton">
+        </div>
+    </div>
+
+
+    <script>
+        cgrey = () => document.getElementById("img").setAttribute("src","https://imgd.aeplcdn.com/0x0/cw/ec/21101/Ferrari-488-Right-Front-Three-Quarter-61997.jpg?v=20171102142")
+        csilver = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/664x374/cw/ec/24539/Ferrari-GTC4-Lusso-Exterior-104086.jpg?v=201711021421&q=75")
+        cblack = () => document.getElementById("img").setAttribute("src", "https://media.istockphoto.com/id/501282196/photo/laferrari.jpg?s=612x612&w=0&k=20&c=yJH3oUuhYSmta_BYdwoUOktqWps5zC86guy5hQ29608=")
+        addingtocart = () => document.getElementsByTagName("input").setAttribute("value", "Added to cart successfully")
+    </script>
+</body>
+</html>
